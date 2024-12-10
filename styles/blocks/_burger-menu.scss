@@ -1,0 +1,94 @@
+.burger_nav {
+  display: none;
+
+  @media screen and (max-width: $breakpoint__m) {
+    display: block;
+  }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  z-index: 999;
+  @media screen and (max-width: $breakpoint__m) {
+    display: block;
+  }
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: $color-white;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.burger_menu {
+  z-index: 999;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  position: fixed;
+  right: -550px;
+  top: 0;
+  background-color: $color-light-black;
+  width: 250px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.burger_menu.active {
+  right: 0;
+}
+
+.burger_link {
+  color: $color-white;
+  transition: 0.2s ease;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background-color: $color-electric-green;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    color: $color-black;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}

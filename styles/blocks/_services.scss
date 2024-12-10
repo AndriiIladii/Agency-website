@@ -1,0 +1,403 @@
+.services {
+  padding: 30px 0 90px;
+  color: $color-light-black;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint__m) {
+    padding-bottom: 40px;
+  }
+}
+
+.services__description {
+  position: absolute;
+  z-index: -1;
+  top: 105px;
+  left: -45px;
+  text-transform: uppercase;
+  background-color: $color-electric-green;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  transform: rotate(270deg);
+
+  @media screen and (max-width: $breakpoint__xxl) {
+    visibility: hidden;
+  }
+
+  @media screen and (max-width: $breakpoint__xl) {
+    visibility: visible;
+    top: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint__l) {
+    visibility: visible;
+    padding: 5px 10px;
+    top: 20px;
+  }
+
+  @media screen and (max-width: $breakpoint__m) {
+    visibility: visible;
+    top: 15px;
+    left: -37px;
+    font-size: 14px;
+  }
+}
+
+.services__row {
+  display: flex;
+  column-gap: 38px;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media screen and (max-width: $breakpoint__xl) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+
+  @media screen and (max-width: $breakpoint__ms) {
+    row-gap: 15px;
+  }
+}
+
+.services__text {
+  margin: 1.5rem 0 2.5rem;
+
+  @media screen and (max-width: $breakpoint__xl) {
+    text-align: center;
+  }
+}
+
+.services__content {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: $breakpoint__xl) {
+    align-items: center;
+  }
+}
+
+.services__tabs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  @media screen and (max-width: $breakpoint__xl) {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  @media screen and (max-width: $breakpoint__l) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $breakpoint__ml) {
+    row-gap: 15px;
+    column-gap: 10px;
+  }
+}
+
+.services__tabs--item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  border: 1px solid $color-light-grey;
+  border-radius: 120px;
+  padding: 26px 40px;
+  color: $color-grey;
+  font-weight: 500;
+  font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+  cursor: pointer;
+
+  @media screen and (max-width: $breakpoint__xl) {
+    padding: 10px 25px;
+    column-gap: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint__l) {
+    padding: 12px 30px;
+    column-gap: 10px;
+    flex: 1 0 335px;
+  }
+
+  @media screen and (max-width: $breakpoint__m) {
+    flex: 1 0 235px;
+    column-gap: 20px;
+  }
+
+  @media screen and (max-width: $breakpoint__ml) {
+    padding: 10px 15px;
+    column-gap: 10px;
+    flex: 1 0 200px;
+  }
+
+  @media screen and (max-width: $breakpoint__ms) {
+    flex: 1 0 130px;
+    padding: 8px 8px;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $breakpoint__s) {
+    flex: 1 0 200px;
+    padding: 14px 15px;
+    justify-content: flex-start;
+    column-gap: 15px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 40px;
+    background: url("/assets/services/tab_arrow.svg") center/contain no-repeat;
+    width: 25px;
+    height: 15px;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: $breakpoint__xl) {
+      visibility: hidden;
+    }
+
+    @media screen and (max-width: $breakpoint__l) {
+      visibility: visible;
+      right: 25px;
+    }
+
+    @media screen and (max-width: $breakpoint__ml) {
+      visibility: hidden;
+    }
+
+    @media screen and (max-width: $breakpoint__s) {
+      visibility: visible;
+    }
+  }
+
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+
+    &::after {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(59deg) brightness(104%) contrast(103%);
+    }
+    .services__tabs--num {
+      color: $color-electric-green;
+    }
+  }
+
+  &.active {
+    background-color: $color-black;
+    color: $color-white;
+
+    &::after {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(59deg) brightness(104%) contrast(103%);
+    }
+    .services__tabs--num {
+      color: $color-electric-green;
+    }
+  }
+}
+
+.services__tabs--num {
+  font-family: $font-secondary;
+}
+
+.services__team {
+  display: none;
+  column-gap: 24px;
+  width: 100%;
+  -webkit-animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  &.visible {
+    display: flex;
+  }
+
+  @media screen and (max-width: $breakpoint__xl) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $breakpoint__m) {
+    align-items: center;
+  }
+
+  @media screen and (max-width: $breakpoint__ms) {
+    column-gap: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint__s) {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.services__team--image {
+  width: 61.82%;
+  height: 580px;
+  background-color: $color-light-grey;
+  border-radius: 32px;
+
+  @media screen and (max-width: $breakpoint__m) {
+    height: 435px;
+  }
+
+  @media screen and (max-width: $breakpoint__ms) {
+    height: 335px;
+  }
+
+  @media screen and (max-width: $breakpoint__s) {
+    height: 275px;
+    width: 91.82%;
+  }
+}
+
+.services__team--wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media screen and (max-width: $breakpoint__s) {
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint__xs) {
+    flex-direction: column;
+  }
+}
+
+.services__team--card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 90px;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 32px;
+  background-color: $color-black-dark;
+  color: $color-white;
+  width: 257px;
+
+  @media screen and (max-width: $breakpoint__m) {
+    padding: 1rem;
+    row-gap: 40px;
+  }
+
+  @media screen and (max-width: $breakpoint__ml) {
+    row-gap: 20px;
+    width: 200px;
+  }
+
+  @media screen and (max-width: $breakpoint__s) {
+    width: 180px;
+  }
+
+  @media screen and (max-width: $breakpoint__xs) {
+    padding: 14px;
+  }
+
+  @media screen and (max-width: $breakpoint__xxs) {
+    width: 260px;
+  }
+
+  p {
+    font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+  }
+}
+
+.services__team--card .link {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+
+  p {
+    font-size: clamp(1rem, 1.107rem + 0.71vw, 1.75rem);
+    font-weight: 600;
+    line-height: 0.9;
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: $breakpoint__ms) {
+      padding: 26px;
+      justify-content: space-around;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      right: 8px;
+      background: url("/assets/services/tab_arrow-white.svg") center/contain
+        no-repeat;
+      width: 24px;
+      height: 20px;
+
+      @media screen and (max-width: $breakpoint__ms) {
+        right: 3px;
+      }
+    }
+
+    &:hover {
+      background-color: $color-electric-green;
+
+      &:after {
+        filter: brightness(0) saturate(100%) invert(14%) sepia(0%)
+          saturate(995%) hue-rotate(144deg) brightness(99%) contrast(83%);
+      }
+    }
+  }
+}
+
+.services__team--card:nth-child(2) {
+  background-color: $color-electric-green;
+  color: $color-black;
+
+  a {
+    background-color: $color-white;
+    padding: 2rem;
+    border-radius: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: $breakpoint__ms) {
+      padding: 26px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      right: 8px;
+      background: url("/assets/services/tab_arrow-black.svg") center/contain
+        no-repeat;
+      width: 24px;
+      height: 20px;
+
+      @media screen and (max-width: $breakpoint__ms) {
+        right: 3px;
+      }
+    }
+
+    &:hover {
+      background-color: #333;
+
+      &:after {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
+          saturate(0%) hue-rotate(59deg) brightness(104%) contrast(103%);
+      }
+    }
+  }
+}

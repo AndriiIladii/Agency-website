@@ -1,0 +1,157 @@
+.contact {
+  padding: 80px 0;
+  color: $color-white;
+  background-color: $color-light-black;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint__m) {
+    padding: 40px 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: $color-light-black;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+
+    @media screen and (max-width: $breakpoint__m) {
+      row-gap: 35px;
+    }
+
+    @media screen and (max-width: $breakpoint__s) {
+      row-gap: 15px;
+    }
+  }
+
+  .contact__slogan {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(2rem, 1.286rem + 3.57vw, 4.5rem);
+    font-weight: 800;
+    font-family: $font-secondary;
+
+    @media screen and (max-width: $breakpoint__l) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &--item:first-child {
+      align-self: flex-start;
+    }
+
+    &--item:last-child {
+      align-self: flex-end;
+    }
+
+    &--item:not(:last-child) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: -65px;
+        background: url("/assets/contact/star.svg") center/contain no-repeat;
+        width: 48px;
+        aspect-ratio: 1;
+
+        @media screen and (max-width: $breakpoint__l) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .contact__lines {
+    display: flex;
+    justify-content: space-between;
+    &--item {
+      height: 4px;
+      width: 45%;
+      background-color: #fff;
+      position: relative;
+
+      @media screen and (max-width: $breakpoint__m) {
+        height: 2px;
+      }
+
+      @media screen and (max-width: $breakpoint__ms) {
+        display: none;
+      }
+
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        right: -15%;
+        background: url("/assets/contact/star.svg") center/contain no-repeat;
+        width: 32px;
+        aspect-ratio: 1;
+
+        @media screen and (max-width: $breakpoint__m) {
+          width: 24px;
+          right: -17%;
+        }
+      }
+    }
+  }
+
+  .contact__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &--image {
+      background-color: $color-light-grey;
+      width: 100%;
+      height: 280px;
+      border-radius: 24px;
+      margin-bottom: 40px;
+    }
+
+    &--text {
+      font-size: clamp(1rem, 0.893rem + 0.54vw, 1.375rem);
+      text-align: center;
+      max-width: 76%;
+      margin-bottom: 24px;
+
+      @media screen and (max-width: $breakpoint__ml) {
+        max-width: 100%;
+      }
+    }
+
+    &--buttons {
+      width: 60%;
+      display: flex;
+      column-gap: 16px;
+      align-items: stretch;
+
+      @media screen and (max-width: $breakpoint__m) {
+        width: 80%;
+      }
+
+      @media screen and (max-width: $breakpoint__ml) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: $breakpoint__s) {
+        width: 80%;
+        flex-direction: column;
+        row-gap: 15px;
+      }
+    }
+  }
+}

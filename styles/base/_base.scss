@@ -1,0 +1,82 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $color-white;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.3889vw, 1.25rem);
+  letter-spacing: -0.01em;
+  line-height: 1.7;
+  color: $color-white;
+}
+
+.container {
+  max-width: calc($container-width + $container-padding-x * 2);
+  margin: 0 auto;
+  padding: 0 $container-padding-x;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 1.607rem + 3.21vw, 4.5rem);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.286rem + 1.07vw, 2.25rem);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
+  font-weight: 400;
+}
+
+h5 {
+  font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+  font-weight: 400;
+}
+
+.green-text {
+  display: inline-block;
+  padding: 0 15px;
+  margin-right: 5px;
+  border-radius: 16px;
+  background-color: $color-electric-green;
+  color: $color-light-black;
+  transform: skew(-10deg);
+
+  @media screen and (max-width: $breakpoint__s) {
+    padding: 0 5px;
+  }
+}
+
+.text-green {
+  display: inline-block;
+  padding: 0 15px;
+  margin-left: 5px;
+  border-radius: 16px;
+  background-color: $color-electric-green;
+  color: $color-light-black;
+  transform: skew(-10deg);
+
+  @media screen and (max-width: $breakpoint__s) {
+    padding: 0 5px;
+  }
+}

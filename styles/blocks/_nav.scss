@@ -1,0 +1,15 @@
+.header__nav {
+  &--list {
+    display: flex;
+    column-gap: 100px;
+  }
+
+  &--link {
+    font-size: 1.125rem;
+    color: $color-white;
+  }
+
+  @media screen and (max-width: $breakpoint__m) {
+    display: none;
+  }
+}

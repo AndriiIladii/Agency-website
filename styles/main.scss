@@ -1,0 +1,21 @@
+// Base
+
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/fonts";
+@import "./base/base";
+@import "./base/buttons";
+@import "./base/animations";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/hero";
+@import "./blocks/burger-menu";
+@import "./blocks/team";
+@import "./blocks/services";
+@import "./blocks/process";
+@import "./blocks/portfolio";
+@import "./blocks/contact";
+
+@import "./blocks/footer";

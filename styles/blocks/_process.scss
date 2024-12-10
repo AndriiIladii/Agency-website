@@ -1,0 +1,133 @@
+.process {
+  margin-top: 90px;
+  padding: 70px 0 0;
+  background-color: $color-light-black;
+  width: 100%;
+  position: relative;
+
+  .process__description {
+    position: absolute;
+    top: 105px;
+    left: -55px;
+    text-transform: uppercase;
+    background-color: $color-grey;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    transform: rotate(270deg);
+
+    @media screen and (max-width: $breakpoint__l) {
+      padding: 8px 15px;
+      top: 60px;
+      left: -48px;
+      font-size: 0.875rem;
+    }
+
+    @media screen and (max-width: $breakpoint__m) {
+      top: 15px;
+    }
+
+    @media screen and (max-width: $breakpoint__ml) {
+      top: -25px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 675px;
+    text-align: center;
+    row-gap: 24px;
+  }
+
+  &__text {
+    color: $color-light-grey;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: $color-light-black;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    width: 100%;
+    height: 120px;
+    background-color: $color-light-black;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+}
+
+.process__cards {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  .process__card {
+    width: 47.33%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 40px;
+    border-radius: 56px;
+    padding: 48px;
+    background-color: $color-black-dark;
+
+    @media screen and (max-width: $breakpoint__m) {
+      row-gap: 15px;
+      padding: 35px;
+      width: 81.33%;
+    }
+
+    @media screen and (max-width: $breakpoint__ms) {
+      width: 100%;
+    }
+
+    &--image {
+      border-radius: 32px;
+      width: 95%;
+      height: 300px;
+      background-color: $color-light-grey;
+    }
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+
+    &--text {
+      font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+    }
+
+    .procces__card--num {
+      font-family: $font-secondary;
+      font-size: clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
+      color: $color-light-grey;
+    }
+  }
+}
