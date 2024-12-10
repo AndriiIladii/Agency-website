@@ -1,7 +1,7 @@
 .header {
   padding: 62px 0 0 0;
   background-color: $color-light-black;
-  background: url("/assets/header/header-grid-bg.jpg") no-repeat center/cover;
+  background: url("../assets/header/header-grid-bg.jpg") no-repeat center/cover;
   position: relative;
 
   &::after {

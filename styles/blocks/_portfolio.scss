@@ -141,7 +141,7 @@
     top: 48%;
     transform: translate(-50%, -50%);
     right: 4px;
-    background: url("/assets/services/tab_arrow-black.svg") center/contain
+    background: url("../assets/services/tab_arrow-black.svg") center/contain
       no-repeat;
     width: 16px;
     height: 14px;
@@ -168,7 +168,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
     right: -2px;
-    background: url("/assets/portfolio/arrow-left.svg") center/contain no-repeat;
+    background: url("../assets/portfolio/arrow-left.svg") center/contain
+      no-repeat;
     width: 28px;
     height: 16px;
   }
@@ -191,7 +192,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     right: -2px;
-    background: url("/assets/portfolio/arrow-right.svg") center/contain
+    background: url("../assets/portfolio/arrow-right.svg") center/contain
       no-repeat;
     width: 28px;
     height: 16px;
