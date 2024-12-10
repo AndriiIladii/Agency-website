@@ -105,37 +105,37 @@ legend {
 
 @font-face {
   font-family: "Monument Extended";
-  src: url("/fonts/monument/MonumentExtended-Regular.woff2") format("woff2"), url("/fonts/monument/MonumentExtended-Regular.woff") format("woff");
+  src: url("../fonts/monument/MonumentExtended-Regular.woff2") format("woff2"), url("../fonts/monument/MonumentExtended-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Monument Extended";
-  src: url("/fonts/monument/MonumentExtended-Ultrabold.woff2") format("woff2"), url("/fonts/monument/MonumentExtended-Ultrabold.woff") format("woff");
+  src: url("../fonts/monument/MonumentExtended-Ultrabold.woff2") format("woff2"), url("../fonts/monument/MonumentExtended-Ultrabold.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Archivo";
-  src: url("/fonts/archivo/Archivo-Regular.woff2") format("woff2"), url("/fonts/archivo/Archivo-Regular.woff") format("woff");
+  src: url("../fonts/archivo/Archivo-Regular.woff2") format("woff2"), url("../fonts/archivo/Archivo-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Archivo";
-  src: url("/fonts/archivo/Archivo-Italic.woff2") format("woff2"), url("/fonts/archivo/Archivo-Italic.woff") format("woff");
+  src: url("../fonts/archivo/Archivo-Italic.woff2") format("woff2"), url("../fonts/archivo/Archivo-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Archivo";
-  src: url("/fonts/archivo/Archivo-Medium.woff2") format("woff2"), url("/fonts/archivo/Archivo-Medium.woff") format("woff");
+  src: url("../fonts/archivo/Archivo-Medium.woff2") format("woff2"), url("../fonts/archivo/Archivo-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Archivo";
-  src: url("/fonts/archivo/Archivo-SemiBold.woff2") format("woff2"), url("/fonts/archivo/Archivo-SemiBold.woff") format("woff");
+  src: url("../fonts/archivo/Archivo-SemiBold.woff2") format("woff2"), url("../fonts/archivo/Archivo-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
@@ -268,7 +268,7 @@ h5 {
 .header {
   padding: 62px 0 0 0;
   background-color: #222;
-  background: url("/assets/header/header-grid-bg.jpg") no-repeat center/cover;
+  background: url("../assets/header/header-grid-bg.jpg") no-repeat center/cover;
   position: relative;
 }
 .header::after {
@@ -500,7 +500,7 @@ h5 {
   position: absolute;
   top: -30px;
   left: -30px;
-  background: url("/assets/team/star.svg") no-repeat center/contain;
+  background: url("../assets/team/star.svg") no-repeat center/contain;
   width: 80px;
   aspect-ratio: 1;
 }
@@ -710,7 +710,7 @@ h5 {
   top: 50%;
   transform: translate(-50%, -50%);
   right: 40px;
-  background: url("/assets/services/tab_arrow.svg") center/contain no-repeat;
+  background: url("../assets/services/tab_arrow.svg") center/contain no-repeat;
   width: 25px;
   height: 15px;
   transition: all 0.3s ease;
@@ -908,7 +908,7 @@ h5 {
   top: 50%;
   transform: translate(-50%, -50%);
   right: 8px;
-  background: url("/assets/services/tab_arrow-white.svg") center/contain no-repeat;
+  background: url("../assets/services/tab_arrow-white.svg") center/contain no-repeat;
   width: 24px;
   height: 20px;
 }
@@ -946,7 +946,7 @@ h5 {
   top: 50%;
   transform: translate(-50%, -50%);
   right: 8px;
-  background: url("/assets/services/tab_arrow-black.svg") center/contain no-repeat;
+  background: url("../assets/services/tab_arrow-black.svg") center/contain no-repeat;
   width: 24px;
   height: 20px;
 }
@@ -1243,7 +1243,7 @@ h5 {
   top: 48%;
   transform: translate(-50%, -50%);
   right: 4px;
-  background: url("/assets/services/tab_arrow-black.svg") center/contain no-repeat;
+  background: url("../assets/services/tab_arrow-black.svg") center/contain no-repeat;
   width: 16px;
   height: 14px;
 }
@@ -1268,7 +1268,7 @@ h5 {
   top: 50%;
   transform: translate(-50%, -50%);
   right: -2px;
-  background: url("/assets/portfolio/arrow-left.svg") center/contain no-repeat;
+  background: url("../assets/portfolio/arrow-left.svg") center/contain no-repeat;
   width: 28px;
   height: 16px;
 }
@@ -1292,7 +1292,7 @@ h5 {
   top: 50%;
   transform: translate(-50%, -50%);
   right: -2px;
-  background: url("/assets/portfolio/arrow-right.svg") center/contain no-repeat;
+  background: url("../assets/portfolio/arrow-right.svg") center/contain no-repeat;
   width: 28px;
   height: 16px;
 }
@@ -1367,7 +1367,7 @@ h5 {
   position: absolute;
   top: 30px;
   right: -65px;
-  background: url("/assets/contact/star.svg") center/contain no-repeat;
+  background: url("../assets/contact/star.svg") center/contain no-repeat;
   width: 48px;
   aspect-ratio: 1;
 }
@@ -1401,7 +1401,7 @@ h5 {
   position: absolute;
   top: -15px;
   right: -15%;
-  background: url("/assets/contact/star.svg") center/contain no-repeat;
+  background: url("../assets/contact/star.svg") center/contain no-repeat;
   width: 32px;
   aspect-ratio: 1;
 }
