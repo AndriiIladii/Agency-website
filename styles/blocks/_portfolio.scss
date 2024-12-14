@@ -68,7 +68,7 @@
 
 .portfolio__item img {
   width: 48.4%;
-  height: auto;
+  max-height: 463px;
   border-radius: 32px;
   border: 10px solid #e5e7ec;
 
@@ -92,8 +92,14 @@
 
 .portfolio__slider--tags {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 16px;
   margin-bottom: 24px;
+  justify-content: center;
+
+  @media screen and (max-width: $breakpoint__ml) {
+    row-gap: 10px;
+  }
 }
 
 .portfolio__slider--tags p {
@@ -135,6 +141,15 @@
     padding: 20px;
   }
 
+  &:hover {
+    background-color: #333;
+
+    &:after {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(59deg) brightness(104%) contrast(103%);
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -161,6 +176,16 @@
   border-radius: 100%;
   border: 1px solid $color-light-black;
   padding: 27px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-black;
+
+    &::after {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+        hue-rotate(307deg) brightness(104%) contrast(101%);
+    }
+  }
 
   &::after {
     content: "";
@@ -185,7 +210,16 @@
   border-radius: 100%;
   border: 1px solid $color-light-black;
   padding: 27px;
+  transition: all 0.3s ease;
 
+  &:hover {
+    background-color: $color-black;
+
+    &::after {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+        hue-rotate(307deg) brightness(104%) contrast(101%);
+    }
+  }
   &::after {
     content: "";
     position: absolute;

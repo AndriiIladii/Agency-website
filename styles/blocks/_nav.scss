@@ -7,9 +7,27 @@
   &--link {
     font-size: 1.125rem;
     color: $color-white;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      height: 2px;
+      width: 100%;
+      background-color: $color-electric-green;
+      transform: scaleX(0);
+      transition: all 0.5s ease;
+    }
+
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
   }
 
-  @media screen and (max-width: $breakpoint__m) {
+  @media screen and (max-width: $breakpoint__lm) {
     display: none;
   }
 }

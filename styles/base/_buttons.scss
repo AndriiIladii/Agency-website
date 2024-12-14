@@ -5,8 +5,16 @@
   font-size: 1.125rem;
   border-radius: 32px;
   padding: 20px 32px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 
-  @media screen and (max-width: $breakpoint__m) {
+  &:hover {
+    color: $color-electric-green;
+    background-color: $color-black;
+    border: 1px solid $color-electric-green;
+  }
+
+  @media screen and (max-width: $breakpoint__lm) {
     display: none;
   }
 }
@@ -27,4 +35,11 @@
   border-radius: 48px;
   padding: 24px 32px;
   font-size: 1.125rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-black;
+    background-color: $color-white;
+    border: 1px solid $color-electric-green;
+  }
 }

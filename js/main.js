@@ -40,9 +40,6 @@ const portfolioSlider = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 50,
 
-  autoplay: {
-    delay: 5000,
-  },
   keyboard: {
     enabled: true,
     onlyInViewport: false,

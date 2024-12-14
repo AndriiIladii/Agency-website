@@ -236,24 +236,12 @@
   }
 }
 
-.services__team--image {
-  width: 61.82%;
-  height: 580px;
+.services__team--image img {
+  width: 100%;
+  max-height: 580px;
+  max-width: 455px;
   background-color: $color-light-grey;
   border-radius: 32px;
-
-  @media screen and (max-width: $breakpoint__m) {
-    height: 435px;
-  }
-
-  @media screen and (max-width: $breakpoint__ms) {
-    height: 335px;
-  }
-
-  @media screen and (max-width: $breakpoint__s) {
-    height: 275px;
-    width: 91.82%;
-  }
 }
 
 .services__team--wrapper {
