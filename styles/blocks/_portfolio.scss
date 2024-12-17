@@ -1,6 +1,6 @@
 .portfolio {
   color: $color-black;
-  padding: 220px 0 180px;
+  padding: 220px 0 50px;
   position: relative;
 
   .portfolio__description {
@@ -53,6 +53,10 @@
   margin-top: 60px;
   display: flex;
   width: 100%;
+
+  @media screen and (max-width: $breakpoint__xxl) {
+    margin-top: 100px;
+  }
 }
 
 .portfolio__item {
@@ -68,7 +72,8 @@
 
 .portfolio__item img {
   width: 48.4%;
-  max-height: 463px;
+  max-height: 465px;
+  min-height: 205px;
   border-radius: 32px;
   border: 10px solid #e5e7ec;
 
@@ -124,7 +129,7 @@
   display: flex;
   column-gap: 8px;
 
-  @media screen and (max-width: $breakpoint__ml) {
+  @media screen and (max-width: $breakpoint__lm) {
     flex-direction: column;
     align-items: center;
     row-gap: 5px;
@@ -137,7 +142,7 @@
   border-radius: 100%;
   position: relative;
   transition: all 0.3s ease;
-  @media screen and (max-width: $breakpoint__ml) {
+  @media screen and (max-width: $breakpoint__lm) {
     padding: 20px;
   }
 
@@ -178,6 +183,11 @@
   padding: 27px;
   transition: all 0.3s ease;
 
+  @media screen and (max-width: $breakpoint__m) {
+    padding: 22px;
+    left: -40px;
+  }
+
   &:hover {
     background-color: $color-black;
 
@@ -197,9 +207,13 @@
       no-repeat;
     width: 28px;
     height: 16px;
-  }
-  @media screen and (max-width: $breakpoint__xxl) {
-    display: none;
+
+    @media screen and (max-width: $breakpoint__m) {
+      width: 22px;
+      height: 14px;
+      right: -1px;
+      top: 48%;
+    }
   }
 }
 
@@ -211,6 +225,10 @@
   border: 1px solid $color-light-black;
   padding: 27px;
   transition: all 0.3s ease;
+
+  @media screen and (max-width: $breakpoint__m) {
+    padding: 22px;
+  }
 
   &:hover {
     background-color: $color-black;
@@ -230,9 +248,24 @@
       no-repeat;
     width: 28px;
     height: 16px;
+
+    @media screen and (max-width: $breakpoint__m) {
+      width: 22px;
+      height: 14px;
+      right: -1px;
+      top: 48%;
+    }
+  }
+}
+
+.slider__btn {
+  @media screen and (max-width: $breakpoint__xxl) {
+    position: absolute;
+    top: 30px;
+    right: 80px;
   }
 
-  @media screen and (max-width: $breakpoint__xxl) {
-    display: none;
+  @media screen and (max-width: $breakpoint__m) {
+    top: 50px;
   }
 }

@@ -1083,7 +1083,7 @@ h5 {
 
 .portfolio {
   color: #101010;
-  padding: 220px 0 180px;
+  padding: 220px 0 50px;
   position: relative;
 }
 .portfolio .portfolio__description {
@@ -1137,6 +1137,11 @@ h5 {
   display: flex;
   width: 100%;
 }
+@media screen and (max-width: 1300px) {
+  .portfolio__slider {
+    margin-top: 100px;
+  }
+}
 
 .portfolio__item {
   display: flex;
@@ -1152,7 +1157,8 @@ h5 {
 
 .portfolio__item img {
   width: 48.4%;
-  max-height: 463px;
+  max-height: 465px;
+  min-height: 205px;
   border-radius: 32px;
   border: 10px solid #e5e7ec;
 }
@@ -1215,7 +1221,7 @@ h5 {
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 890px) {
   .portfolio__slider--link {
     flex-direction: column;
     align-items: center;
@@ -1230,7 +1236,7 @@ h5 {
   position: relative;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 890px) {
   .portfolio__slider--link a {
     padding: 20px;
   }
@@ -1267,6 +1273,12 @@ h5 {
   padding: 27px;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  .portfolio__slider--prev {
+    padding: 22px;
+    left: -40px;
+  }
+}
 .portfolio__slider--prev:hover {
   background-color: #101010;
 }
@@ -1283,9 +1295,12 @@ h5 {
   width: 28px;
   height: 16px;
 }
-@media screen and (max-width: 1300px) {
-  .portfolio__slider--prev {
-    display: none;
+@media screen and (max-width: 768px) {
+  .portfolio__slider--prev::after {
+    width: 22px;
+    height: 14px;
+    right: -1px;
+    top: 48%;
   }
 }
 
@@ -1297,6 +1312,11 @@ h5 {
   border: 1px solid #222;
   padding: 27px;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .portfolio__slider--next {
+    padding: 22px;
+  }
 }
 .portfolio__slider--next:hover {
   background-color: #101010;
@@ -1314,9 +1334,25 @@ h5 {
   width: 28px;
   height: 16px;
 }
+@media screen and (max-width: 768px) {
+  .portfolio__slider--next::after {
+    width: 22px;
+    height: 14px;
+    right: -1px;
+    top: 48%;
+  }
+}
+
 @media screen and (max-width: 1300px) {
-  .portfolio__slider--next {
-    display: none;
+  .slider__btn {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__btn {
+    top: 50px;
   }
 }
 
