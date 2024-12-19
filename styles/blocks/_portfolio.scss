@@ -1,7 +1,11 @@
 .portfolio {
   color: $color-black;
-  padding: 220px 0 50px;
+  padding: 220px 0 120px;
   position: relative;
+
+  @media screen and (max-width: $breakpoint__m) {
+    padding-bottom: 70px;
+  }
 
   .portfolio__description {
     position: absolute;

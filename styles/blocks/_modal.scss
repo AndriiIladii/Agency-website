@@ -1,0 +1,78 @@
+.modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: $color-light-black;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal__container.show {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: $color-light-grey;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint__ml) {
+    width: 90%;
+    padding: 20px 40px;
+  }
+}
+
+.modal__title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form .form__button {
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  color: $color-electric-green;
+  background-color: $color-light-black;
+  padding: 20px 32px;
+  margin: 0 auto;
+}
+
+.form__field .form__input,
+.form__textarea {
+  width: 100%;
+  padding: 10px 15px 15px 5px;
+  background-color: transparent;
+  border-bottom: 2px solid $color-light-black;
+  outline: none;
+  font-size: 1rem;
+  margin: 12px 0;
+}
+
+.form__field .form__textarea {
+  resize: none;
+}

@@ -11,6 +11,7 @@ body {
   letter-spacing: -0.01em;
   line-height: 1.7;
   color: $color-white;
+  position: relative;
 }
 
 .container {
@@ -53,7 +54,8 @@ h5 {
   font-weight: 400;
 }
 
-.green-text {
+.green__text-mr,
+.green__text-ml {
   display: inline-block;
   padding: 0 15px;
   margin-right: 5px;
@@ -67,16 +69,6 @@ h5 {
   }
 }
 
-.text-green {
-  display: inline-block;
-  padding: 0 15px;
+.green__text-ml {
   margin-left: 5px;
-  border-radius: 16px;
-  background-color: $color-electric-green;
-  color: $color-light-black;
-  transform: skew(-10deg);
-
-  @media screen and (max-width: $breakpoint__s) {
-    padding: 0 5px;
-  }
 }

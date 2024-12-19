@@ -1,8 +1,8 @@
 // Hamburger Menu
 
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".burger_menu");
-const menuLinks = document.querySelectorAll(".burger_link");
+const navMenu = document.querySelector(".burger__menu");
+const menuLinks = document.querySelectorAll(".burger__link");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
@@ -57,4 +57,18 @@ const portfolioSlider = new Swiper(".swiper", {
       spaceBetween: 10,
     },
   },
+});
+
+const openButtons = document.querySelectorAll(".open");
+const modal = document.querySelector(".modal__container");
+const closeBtn = document.getElementById("close");
+
+openButtons.forEach((open) => {
+  open.addEventListener("click", () => {
+    modal.classList.add("show");
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.remove("show");
 });

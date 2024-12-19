@@ -39,41 +39,23 @@
     column-gap: 40px;
 
     @media screen and (max-width: $breakpoint__l) {
-      flex-direction: column-reverse;
+      flex-direction: column;
       margin-top: 40px;
       row-gap: 30px;
     }
-    .image-1 {
-      position: relative;
 
-      img {
-        width: 100%;
-        max-height: 504px;
-        border-radius: 32px;
-        max-width: 750px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        top: -30px;
-        left: -30px;
-        background: url("../assets/team/star.svg") no-repeat center/contain;
-        width: 80px;
-        aspect-ratio: 1;
-
-        @media screen and (max-width: $breakpoint__m) {
-          top: -15px;
-          left: -15px;
-          width: 50px;
-        }
-      }
+    .image-1 img {
+      width: 100%;
+      max-height: 504px;
+      border-radius: 32px;
+      max-width: 750px;
     }
-  }
 
-  .image-2 img {
-    border-radius: 32px;
-    max-height: 663px;
-    width: 100%;
-    max-width: 443px;
+    .image-2 img {
+      border-radius: 32px;
+      max-height: 663px;
+      width: 100%;
+      max-width: 443px;
+    }
   }
 }

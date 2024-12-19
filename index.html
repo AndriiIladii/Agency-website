@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
@@ -15,7 +29,9 @@
       <div class="container">
         <div class="header__row">
           <a href="#"
-            ><img src="./assets/header/header-logo.svg" alt="Logo"
+            ><img
+              src="./assets/header/header-logo.svg"
+              alt="DeltaSpark Agency Logo"
           /></a>
           <nav class="header__nav">
             <ul class="header__nav--list">
@@ -33,23 +49,27 @@
               </li>
             </ul>
           </nav>
-          <div class="burger_nav">
-            <ul class="burger_menu">
+          <div class="burger__nav">
+            <ul class="burger__menu">
               <li class="burger__menu-item">
-                <a class="burger_link menu_link" href="#">Home</a>
+                <a class="burger__link menu_link" href="#">Home</a>
               </li>
               <li class="burger__menu-item">
-                <a class="burger_link menu_link" href="#service">Services</a>
+                <a class="burger__link menu_link" href="#service">Services</a>
               </li>
               <li class="burger__menu-item">
-                <a class="burger_link menu_link" href="#process">How We Work</a>
+                <a class="burger__link menu_link" href="#process"
+                  >How We Work</a
+                >
               </li>
               <li class="burger__menu-item">
-                <a class="burger_link menu_link" href="#portfolio">Portfolio</a>
+                <a class="burger__link menu_link" href="#portfolio"
+                  >Portfolio</a
+                >
               </li>
 
               <li class="burger__menu-item">
-                <button class="burger__btn btn">Contact Us</button>
+                <button class="burger__btn btn open">Contact Us</button>
               </li>
             </ul>
             <div class="hamburger">
@@ -58,7 +78,7 @@
               <span class="bar"></span>
             </div>
           </div>
-          <button class="header__btn btn">Contact Us</button>
+          <button class="header__btn btn open">Contact Us</button>
         </div>
       </div>
       <section class="hero">
@@ -66,7 +86,7 @@
           <div class="hero__row">
             <div class="hero__content">
               <h1 class="hero__title">
-                <span class="green-text">DeltaSpark</span>Agency
+                <span class="green__text-mr">DeltaSpark</span>Agency
               </h1>
               <h2 class="hero__subtitle">Georgia-Based Digital Agency</h2>
               <p class="hero__text">
@@ -112,7 +132,7 @@
           <div class="services__row">
             <div class="services__content">
               <h3 class="services__title">
-                Our<span class="text-green">Services</span>
+                Our<span class="green__text-ml">Services</span>
               </h3>
               <p class="services__text">
                 DeltaSpark Agency offers a range of design services that are
@@ -129,11 +149,11 @@
                 </div>
                 <div class="services__tabs--item">
                   <span class="services__tabs--num">03</span>
-                  <p class="services__tabs--name">3D Designs</p>
+                  <p class="services__tabs--name">DevOps</p>
                 </div>
                 <div class="services__tabs--item">
                   <span class="services__tabs--num">04</span>
-                  <p class="services__tabs--name">Motion Graphics</p>
+                  <p class="services__tabs--name">Tech Consultancy</p>
                 </div>
               </div>
             </div>
@@ -144,7 +164,7 @@
               <div class="services__team--wrapper">
                 <div class="services__team--card">
                   <p>Ever wondered how design magic happens?</p>
-                  <div class="link">
+                  <div class="services__team--link">
                     <p>See how we work</p>
                     <a href="#" target="_blank"></a>
                   </div>
@@ -154,7 +174,7 @@
                     Looking for design experts who can bring your vision to
                     life?
                   </p>
-                  <div class="link">
+                  <div class="services__team--link">
                     <p>Meet our expert</p>
                     <a href="#" target="_blank"></a>
                   </div>
@@ -168,7 +188,7 @@
               <div class="services__team--wrapper">
                 <div class="services__team--card">
                   <p>Ever wondered how design magic happens?</p>
-                  <div class="link">
+                  <div class="services__team--link">
                     <p>See how we work</p>
                     <a href="#" target="_blank"></a>
                   </div>
@@ -178,7 +198,7 @@
                     Looking for design experts who can bring your vision to
                     life?
                   </p>
-                  <div class="link">
+                  <div class="services__team--link">
                     <p>Meet our expert</p>
                     <a href="#" target="_blank"></a>
                   </div>
@@ -242,7 +262,7 @@
           <div class="process__row">
             <div class="process__content">
               <h2>
-                How our Design Procces<span class="text-green">Works</span>
+                How our Design Procces<span class="green__text-ml">Works</span>
               </h2>
               <p class="process__text">
                 DeltaSpark Agency follows a collaborative and iterative approach
@@ -315,7 +335,7 @@
           <p class="portfolio__description">portfolio</p>
           <div class="portfolio__row">
             <h3 class="portfolio__title">
-              Our<span class="text-green">Best Work </span>of <br />
+              Our<span class="green__text-ml">Best Work </span>of <br />
               Successful Projects
             </h3>
             <div class="slider-wrapp">
@@ -323,8 +343,14 @@
                 <div class="portfolio__slider--wrapper swiper-wrapper">
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__item">
-                      <img src="assets/portfolio/first.jpg" alt="" />
-                      <img src="assets/portfolio/second.jpg" alt="" />
+                      <img
+                        src="assets/portfolio/mesh_first-slide.jpg"
+                        alt="Mesh++ website first slide"
+                      />
+                      <img
+                        src="assets/portfolio/mesh_second-slide.jpg"
+                        alt="Mesh++ website second slide"
+                      />
                     </div>
                     <div class="portfolio__slider--content swiper-content">
                       <div class="portfolio__slider--tags">
@@ -349,8 +375,14 @@
                   </div>
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__item">
-                      <img src="assets/portfolio/third.jpg" alt="" />
-                      <img src="assets/portfolio/fourth.jpg" alt="" />
+                      <img
+                        src="assets/portfolio/oddbox_first-slide.jpg"
+                        alt="Oddbox website first slide"
+                      />
+                      <img
+                        src="assets/portfolio/oddbox_second-slide.jpg"
+                        alt="Oddbox website second slide"
+                      />
                     </div>
                     <div class="portfolio__slider--content swiper-content">
                       <div class="portfolio__slider--tags">
@@ -372,8 +404,14 @@
                   </div>
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__item">
-                      <img src="assets/portfolio/fifth.jpg" alt="" />
-                      <img src="assets/portfolio/sixth.png" alt="" />
+                      <img
+                        src="assets/portfolio/upstox_first-slide.jpg"
+                        alt="Upstox website first slide"
+                      />
+                      <img
+                        src="assets/portfolio/upstox_second-slide.png"
+                        alt="Upstox website second slide"
+                      />
                     </div>
                     <div class="portfolio__slider--content swiper-content">
                       <div class="portfolio__slider--tags">
@@ -396,8 +434,14 @@
                   </div>
                   <div class="portfolio__slide swiper-slide">
                     <div class="portfolio__item">
-                      <img src="assets/portfolio/seventh.jpg" alt="" />
-                      <img src="assets/portfolio/eigth.jpg" alt="" />
+                      <img
+                        src="assets/portfolio/hotel_first-slide.jpg"
+                        alt="Hotel admin dashboard first slide"
+                      />
+                      <img
+                        src="assets/portfolio/hotel_second-slide.jpg"
+                        alt="Hotel admin dashboard second slide"
+                      />
                     </div>
                     <div class="portfolio__slider--content swiper-content">
                       <div class="portfolio__slider--tags">
@@ -462,14 +506,66 @@
                 of the process and help you find the perfect fit for your team
               </p>
               <div class="contact__content--buttons">
-                <button class="contact__btn">Hire Us</button>
-                <button class="contact__btn">Book Consultation</button>
+                <button class="contact__btn open">Hire Us</button>
+                <a
+                  href="https://calendar.app.google/L6qqwiUus3iGkDDq7"
+                  class="contact__btn"
+                  target="_blank"
+                  >Book Consultation</a
+                >
               </div>
             </div>
             <div class="contact__lines">
               <div class="contact__lines--item"></div>
               <div class="contact__lines--item"></div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="modal__container">
+          <div class="modal">
+            <h5 class="modal__title">Contact Us</h5>
+            <form class="modal__form form" action="#">
+              <div class="form__group">
+                <div class="form__field">
+                  <label for="name" class="form__label">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="form__input"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="form__group">
+                <div class="form__field">
+                  <label for="email" class="form__label">Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="form__input"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="form__group">
+                <div class="form__field">
+                  <label for="message" class="form__label"
+                    >Brief project overview</label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="10"
+                    rows="5"
+                    class="form__textarea"
+                  ></textarea>
+                </div>
+              </div>
+              <button type="submit" class="form__button">Send Message</button>
+            </form>
+            <button id="close" class="modal__close-button">X</button>
           </div>
         </div>
       </section>
@@ -482,23 +578,44 @@
               Copyright © 2025 DeltaSpark Agency. All rights reserved.
             </p>
             <div class="footer__socials">
-              <a href="#" class="footer__socials--link"
-                ><img src="./assets/footer/social-icons/facebook.svg" alt=""
+              <a
+                href="https://www.facebook.com/"
+                class="footer__socials--link"
+                target="_blank"
+                ><img
+                  src="./assets/footer/social-icons/facebook.svg"
+                  alt="facebook link"
               /></a>
-              <a href="#" class="footer__socials--link"
-                ><img src="./assets/footer/social-icons/linkedin.svg" alt=""
+              <a
+                href="https://www.linkedin.com/"
+                class="footer__socials--link"
+                target="_blank"
+                ><img
+                  src="./assets/footer/social-icons/linkedin.svg"
+                  alt="linkedin link"
               /></a>
-              <a href="#" class="footer__socials--link"
-                ><img src="./assets/footer/social-icons/github.svg" alt=""
+              <a
+                href="https://github.com/"
+                class="footer__socials--link"
+                target="_blank"
+                ><img
+                  src="./assets/footer/social-icons/github.svg"
+                  alt="github link"
               /></a>
-              <a href="#" class="footer__socials--link"
-                ><img src="./assets/footer/social-icons/dribbble.svg" alt=""
+              <a
+                href="https://dribbble.com/"
+                class="footer__socials--link"
+                target="_blank"
+                ><img
+                  src="./assets/footer/social-icons/dribbble.svg"
+                  alt="dribbble link"
               /></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
