@@ -59,6 +59,8 @@ const portfolioSlider = new Swiper(".swiper", {
   },
 });
 
+//Modal
+
 const openButtons = document.querySelectorAll(".open");
 const modal = document.querySelector(".modal__container");
 const closeBtn = document.getElementById("close");
@@ -72,3 +74,28 @@ openButtons.forEach((open) => {
 closeBtn.addEventListener("click", () => {
   modal.classList.remove("show");
 });
+
+// Scroll to top
+
+let calcScrollValue = () => {
+  let scrollProgress = document.querySelector(".progress");
+  let progressValue = document.querySelector(".progress__value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+
+  if (pos > 100) {
+    scrollProgress.style.display = "flex";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#9dff50 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;

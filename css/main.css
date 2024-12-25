@@ -206,6 +206,32 @@ h5 {
   margin-left: 5px;
 }
 
+.progress {
+  z-index: 1000;
+  position: fixed;
+  bottom: 70px;
+  right: 15px;
+  width: 70px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.progress__value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__btn {
   background-color: #9dff50;
   color: #101010;
@@ -267,6 +293,11 @@ h5 {
   background-color: #222;
   background: url("../assets/header/header-grid-bg.png") no-repeat center/cover;
   position: relative;
+}
+@media screen and (max-width: 890px) {
+  .header {
+    padding: 40px 0 0 0;
+  }
 }
 .header::after {
   content: "";

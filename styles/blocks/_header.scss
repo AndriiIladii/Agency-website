@@ -4,6 +4,10 @@
   background: url("../assets/header/header-grid-bg.png") no-repeat center/cover;
   position: relative;
 
+  @media screen and (max-width: $breakpoint__lm) {
+    padding: 40px 0 0 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
