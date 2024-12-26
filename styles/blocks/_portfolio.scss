@@ -266,10 +266,14 @@
   @media screen and (max-width: $breakpoint__xxl) {
     position: absolute;
     top: 30px;
-    right: 80px;
+    left: 80px;
   }
 
   @media screen and (max-width: $breakpoint__m) {
     top: 50px;
+  }
+
+  @media screen and (max-width: $breakpoint__ml) {
+    display: none;
   }
 }

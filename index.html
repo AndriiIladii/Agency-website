@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DeltaSpark Agency is a dynamic and innovative design agency that brings creative ideas to life. We offer custom web development, UI/UX design, DevOps, and tech consultancy services."
+    />
+    <meta
+      name="keywords"
+      content="DeltaSpark Agency, web development, UI/UX design, DevOps, tech consultancy, digital agency, branding, web design, graphic design, Georgia-based agency"
+    />
+    <meta name="author" content="DeltaSpark Agency" />
     <link
       rel="icon"
       type="image/png"
@@ -17,12 +25,13 @@
       href="favicon/apple-touch-icon.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <title>DeltaSpark Agency</title>
+    <title>DeltaSpark Agency - custom web-development</title>
   </head>
   <body>
     <div class="progress">
@@ -32,11 +41,12 @@
     </div>
     <header class="header">
       <div class="container">
-        <div class="header__row">
+        <div data-aos="fade-down" class="header__row">
           <a href="#"
             ><img
               src="./assets/header/header-logo.png"
               alt="DeltaSpark Agency Logo"
+              loading="lazy"
           /></a>
           <nav class="header__nav">
             <ul class="header__nav--list">
@@ -88,7 +98,7 @@
       </div>
       <section class="hero">
         <div class="container">
-          <div class="hero__row">
+          <div data-aos="fade-up" class="hero__row">
             <div class="hero__content">
               <h1 class="hero__title">
                 <span class="green__text-mr">DeltaSpark</span>Agency
@@ -108,7 +118,7 @@
     <main>
       <section class="team">
         <div class="container">
-          <div class="team__row">
+          <div data-aos="fade-left" class="team__row">
             <div class="team__content">
               <h3 class="team__title">
                 Digital thinkers.<br />
@@ -122,10 +132,14 @@
             </div>
             <div class="team__images">
               <div class="image-1">
-                <img src="assets/team/team.jpg" alt="team" />
+                <img src="assets/team/team.jpg" alt="team" loading="lazy" />
               </div>
               <div class="image-2">
-                <img src="assets/team/team-work.jpg" alt="team-work" />
+                <img
+                  src="assets/team/team-work.jpg"
+                  alt="team-work"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -134,7 +148,7 @@
       <section id="service" class="services">
         <div class="container">
           <p class="services__description">what we do</p>
-          <div class="services__row">
+          <div data-aos="fade-right" class="services__row">
             <div class="services__content">
               <h3 class="services__title">
                 Our<span class="green__text-ml">Services</span>
@@ -164,7 +178,11 @@
             </div>
             <div class="services__team visible">
               <div class="services__team--image">
-                <img src="assets/services/graphics.jpg" alt="desginer" />
+                <img
+                  src="assets/services/graphics.jpg"
+                  alt="desginer"
+                  loading="lazy"
+                />
               </div>
               <div class="services__team--wrapper">
                 <div class="services__team--card">
@@ -188,7 +206,11 @@
             </div>
             <div class="services__team">
               <div class="services__team--image">
-                <img src="assets/services/motion.jpg" alt="web development" />
+                <img
+                  src="assets/services/motion.jpg"
+                  alt="web development"
+                  loading="lazy"
+                />
               </div>
               <div class="services__team--wrapper">
                 <div class="services__team--card">
@@ -212,7 +234,11 @@
             </div>
             <div class="services__team">
               <div class="services__team--image">
-                <img src="assets/services/graphics.jpg" alt="graphics" />
+                <img
+                  src="assets/services/graphics.jpg"
+                  alt="graphics"
+                  loading="lazy"
+                />
               </div>
               <div class="services__team--wrapper">
                 <div class="services__team--card">
@@ -236,7 +262,11 @@
             </div>
             <div class="services__team">
               <div class="services__team--image">
-                <img src="assets/services/motion.jpg" alt="motion-graphics" />
+                <img
+                  src="assets/services/motion.jpg"
+                  alt="motion-graphics"
+                  loading="lazy"
+                />
               </div>
               <div class="services__team--wrapper">
                 <div class="services__team--card">
@@ -276,10 +306,14 @@
               </p>
             </div>
             <div class="process__cards">
-              <div class="process__card">
+              <div data-aos="fade-down" class="process__card">
                 <span class="procces__card--num">01</span>
                 <div class="process__card--image">
-                  <img src="assets/process/discovery.jpg" alt="discovery" />
+                  <img
+                    src="assets/process/discovery.jpg"
+                    alt="discovery"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="process__card--content">
                   <h4 class="process__card--title">Discovery</h4>
@@ -289,10 +323,14 @@
                   </p>
                 </div>
               </div>
-              <div class="process__card">
+              <div data-aos="fade-down" class="process__card">
                 <span class="procces__card--num">02</span>
                 <div class="process__card--image">
-                  <img src="assets/process/strategy.jpg" alt="strategy" />
+                  <img
+                    src="assets/process/strategy.jpg"
+                    alt="strategy"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="process__card--content">
                   <h4 class="process__card--title">Strategy</h4>
@@ -302,10 +340,14 @@
                   </p>
                 </div>
               </div>
-              <div class="process__card">
+              <div data-aos="fade-up" class="process__card">
                 <span class="procces__card--num">03</span>
                 <div class="process__card--image">
-                  <img src="assets/process/design.jpg" alt="design" />
+                  <img
+                    src="assets/process/design.jpg"
+                    alt="design"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="process__card--content">
                   <h4 class="process__card--title">Design</h4>
@@ -315,12 +357,13 @@
                   </p>
                 </div>
               </div>
-              <div class="process__card">
+              <div data-aos="fade-up" class="process__card">
                 <span class="procces__card--num">04</span>
                 <div class="process__card--image">
                   <img
                     src="assets/process/web-development.jpg"
                     alt="web-development"
+                    loading="lazy"
                   />
                 </div>
                 <div class="process__card--content">
@@ -338,7 +381,7 @@
       <section id="portfolio" class="portfolio">
         <div class="container">
           <p class="portfolio__description">portfolio</p>
-          <div class="portfolio__row">
+          <div data-aos="fade-down" class="portfolio__row">
             <h3 class="portfolio__title">
               Our<span class="green__text-ml">Best Work </span>of <br />
               Successful Projects
@@ -351,10 +394,12 @@
                       <img
                         src="assets/portfolio/mesh_first-slide.jpg"
                         alt="Mesh++ website first slide"
+                        loading="lazy"
                       />
                       <img
                         src="assets/portfolio/mesh_second-slide.jpg"
                         alt="Mesh++ website second slide"
+                        loading="lazy"
                       />
                     </div>
                     <div class="portfolio__slider--content swiper-content">
@@ -383,10 +428,12 @@
                       <img
                         src="assets/portfolio/oddbox_first-slide.jpg"
                         alt="Oddbox website first slide"
+                        loading="lazy"
                       />
                       <img
                         src="assets/portfolio/oddbox_second-slide.jpg"
                         alt="Oddbox website second slide"
+                        loading="lazy"
                       />
                     </div>
                     <div class="portfolio__slider--content swiper-content">
@@ -412,10 +459,12 @@
                       <img
                         src="assets/portfolio/upstox_first-slide.jpg"
                         alt="Upstox website first slide"
+                        loading="lazy"
                       />
                       <img
                         src="assets/portfolio/upstox_second-slide.png"
                         alt="Upstox website second slide"
+                        loading="lazy"
                       />
                     </div>
                     <div class="portfolio__slider--content swiper-content">
@@ -442,10 +491,12 @@
                       <img
                         src="assets/portfolio/hotel_first-slide.jpg"
                         alt="Hotel admin dashboard first slide"
+                        loading="lazy"
                       />
                       <img
                         src="assets/portfolio/hotel_second-slide.jpg"
                         alt="Hotel admin dashboard second slide"
+                        loading="lazy"
                       />
                     </div>
                     <div class="portfolio__slider--content swiper-content">
@@ -490,7 +541,7 @@
       </section>
       <section class="contact">
         <div class="container">
-          <div class="contact__row">
+          <div data-aos="fade-up" class="contact__row">
             <div class="contact__slogan">
               <p class="contact__slogan--item">Innovate</p>
               <p class="contact__slogan--item">Inspire</p>
@@ -503,7 +554,11 @@
 
             <div class="contact__content">
               <div class="contact__content--image">
-                <img src="assets/contact/contact.jpg" alt="contact" />
+                <img
+                  src="assets/contact/contact.jpg"
+                  alt="contact"
+                  loading="lazy"
+                />
               </div>
               <p class="contact__content--text">
                 Finding the right talent for your business can be a daunting
@@ -534,7 +589,7 @@
             <form class="modal__form form" action="#">
               <div class="form__group">
                 <div class="form__field">
-                  <label for="name" class="form__label">Name</label>
+                  <label for="name" class="form__label">Full Name</label>
                   <input
                     type="text"
                     id="name"
@@ -590,6 +645,7 @@
                 ><img
                   src="./assets/footer/social-icons/facebook.svg"
                   alt="facebook link"
+                  loading="lazy"
               /></a>
               <a
                 href="https://www.linkedin.com/"
@@ -598,6 +654,7 @@
                 ><img
                   src="./assets/footer/social-icons/linkedin.svg"
                   alt="linkedin link"
+                  loading="lazy"
               /></a>
               <a
                 href="https://github.com/"
@@ -606,6 +663,7 @@
                 ><img
                   src="./assets/footer/social-icons/github.svg"
                   alt="github link"
+                  loading="lazy"
               /></a>
               <a
                 href="https://dribbble.com/"
@@ -614,12 +672,14 @@
                 ><img
                   src="./assets/footer/social-icons/dribbble.svg"
                   alt="dribbble link"
+                  loading="lazy"
               /></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

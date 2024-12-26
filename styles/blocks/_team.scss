@@ -9,6 +9,9 @@
   &__row {
     display: flex;
     flex-direction: column;
+    animation: appear 3s ease 0s 1 normal forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
   }
 
   &__content {
