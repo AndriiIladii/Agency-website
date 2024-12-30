@@ -1,7 +1,7 @@
 .header__nav {
   &--list {
     display: flex;
-    column-gap: 100px;
+    column-gap: 6.25rem;
   }
 
   &--link {
@@ -12,8 +12,8 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -10px;
-      height: 2px;
+      bottom: -0.625rem;
+      height: 0.125rem;
       width: 100%;
       background-color: $color-electric-green;
       transform: scaleX(0);

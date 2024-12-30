@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   line-height: 1.7;
   color: $color-white;
   position: relative;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 .container {
@@ -58,27 +59,27 @@ h5 {
 .green__text-mr,
 .green__text-ml {
   display: inline-block;
-  padding: 0 15px;
-  margin-right: 5px;
-  border-radius: 16px;
+  padding: 0 0.9375rem;
+  margin-right: 0.3125rem;
+  border-radius: 1rem;
   background-color: $color-electric-green;
   color: $color-light-black;
   transform: skew(-10deg);
 
   @media screen and (max-width: $breakpoint__s) {
-    padding: 0 5px;
+    padding: 0 0.3125rem;
   }
 }
 
 .green__text-ml {
-  margin-left: 5px;
+  margin-left: 0.3125rem;
 }
 
-.progress {
+.scroll__progress {
   z-index: 1000;
   position: fixed;
-  bottom: 70px;
-  right: 15px;
+  bottom: 4.375rem;
+  right: 0.9375rem;
   width: 70px;
   aspect-ratio: 1;
   cursor: pointer;
@@ -86,13 +87,13 @@ h5 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
 }
 
-.progress__value {
+.scroll__progress--value {
   display: block;
-  height: calc(100% - 15px);
-  width: calc(100% - 15px);
+  height: calc(100% - 0.9375rem);
+  width: calc(100% - 0.9375rem);
   background-color: #fff;
   border-radius: 50%;
   display: flex;

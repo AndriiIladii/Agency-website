@@ -34,14 +34,14 @@
     <title>DeltaSpark Agency - custom web-development</title>
   </head>
   <body>
-    <div class="progress">
-      <span class="progress__value"
+    <div class="scroll__progress">
+      <span class="scroll__progress--value"
         ><img src="./assets/header/scroll-top.svg" alt="scroll to top arrow"
       /></span>
     </div>
     <header class="header">
-      <div class="container">
-        <div data-aos="fade-down" class="header__row">
+      <div class="container header__container">
+        <div class="header__row">
           <a href="#"
             ><img
               src="./assets/header/header-logo.png"
@@ -96,6 +96,8 @@
           <button class="header__btn btn open">Contact Us</button>
         </div>
       </div>
+    </header>
+    <main>
       <section class="hero">
         <div class="container">
           <div data-aos="fade-up" class="hero__row">
@@ -114,11 +116,9 @@
           </div>
         </div>
       </section>
-    </header>
-    <main>
       <section class="team">
         <div class="container">
-          <div data-aos="fade-left" class="team__row">
+          <div class="team__row">
             <div class="team__content">
               <h3 class="team__title">
                 Digital thinkers.<br />
@@ -132,14 +132,32 @@
             </div>
             <div class="team__images">
               <div class="image-1">
-                <img src="assets/team/team.jpg" alt="team" loading="lazy" />
+                <picture>
+                  <img
+                    sizes="(max-width: 740px) 100vw, 740px"
+                    srcset="
+                      assets/team/team-330.jpg 330w,
+                      assets/team/team-582.jpg 582w,
+                      assets/team/team-740.jpg 740w
+                    "
+                    src="assets/team/team-740.jpg"
+                    alt=""
+                  />
+                </picture>
               </div>
               <div class="image-2">
-                <img
-                  src="assets/team/team-work.jpg"
-                  alt="team-work"
-                  loading="lazy"
-                />
+                <picture>
+                  <img
+                    sizes="(max-width: 640px) 100vw, 640px"
+                    srcset="
+                      assets/team/teamWork-330.jpg 330w,
+                      assets/team/teamWork-517.jpg 517w,
+                      assets/team/teamWork-640.jpg 640w
+                    "
+                    src="assets/team/teamWork-640.jpg"
+                    alt=""
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -243,7 +261,7 @@
               <div class="services__team--wrapper">
                 <div class="services__team--card">
                   <p>Ever wondered how design magic happens?</p>
-                  <div class="link">
+                  <div class="services__team--link">
                     <p>See how we work</p>
                     <a href="#" target="_blank"></a>
                   </div>
@@ -253,7 +271,7 @@
                     Looking for design experts who can bring your vision to
                     life?
                   </p>
-                  <div class="link">
+                  <div class="services__team--link">
                     <p>Meet our expert</p>
                     <a href="#" target="_blank"></a>
                   </div>
@@ -271,7 +289,7 @@
               <div class="services__team--wrapper">
                 <div class="services__team--card">
                   <p>Ever wondered how design magic happens?</p>
-                  <div class="link">
+                  <div class="services__team--link">
                     <p>See how we work</p>
                     <a href="#" target="_blank"></a>
                   </div>
@@ -281,7 +299,7 @@
                     Looking for design experts who can bring your vision to
                     life?
                   </p>
-                  <div class="link">
+                  <div class="services__team--link">
                     <p>Meet our expert</p>
                     <a href="#" target="_blank"></a>
                   </div>
@@ -596,6 +614,7 @@
                     class="form__input"
                     autocomplete="off"
                   />
+                  <p class="error__text">Name can't be blank</p>
                 </div>
               </div>
               <div class="form__group">
@@ -607,6 +626,7 @@
                     class="form__input"
                     autocomplete="off"
                   />
+                  <p class="error__text">Email can't be blank</p>
                 </div>
               </div>
               <div class="form__group">
@@ -621,6 +641,7 @@
                     rows="5"
                     class="form__textarea"
                   ></textarea>
+                  <p class="error__text">Subject can't be blank</p>
                 </div>
               </div>
               <button type="submit" class="form__button">Send Message</button>
@@ -681,6 +702,8 @@
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

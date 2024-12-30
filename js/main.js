@@ -40,6 +40,11 @@ const portfolioSlider = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 50,
 
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+
   keyboard: {
     enabled: true,
     onlyInViewport: false,
@@ -59,6 +64,41 @@ const portfolioSlider = new Swiper(".swiper", {
   },
 });
 
+// Scroll to top
+
+const calcScrollValue = () => {
+  const scrollProgress = document.querySelector(".scroll__progress");
+  const pos = document.documentElement.scrollTop;
+  const calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const scrollValue = Math.round((pos * 100) / calcHeight);
+
+  scrollProgress.style.display = pos > 100 ? "flex" : "none";
+
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+
+  scrollProgress.style.background = `conic-gradient(#9dff50 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.addEventListener("scroll", calcScrollValue);
+window.addEventListener("load", calcScrollValue);
+
+AOS.init();
+
+// Sticky Header
+
+document.addEventListener("scroll", () => {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
 //Modal
 
 const openButtons = document.querySelectorAll(".open");
@@ -75,29 +115,48 @@ closeBtn.addEventListener("click", () => {
   modal.classList.remove("show");
 });
 
-// Scroll to top
+// Email sending
 
-let calcScrollValue = () => {
-  let scrollProgress = document.querySelector(".progress");
-  let progressValue = document.querySelector(".progress__value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
-
-  if (pos > 100) {
-    scrollProgress.style.display = "flex";
-  } else {
-    scrollProgress.style.display = "none";
-  }
-  scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
-  scrollProgress.style.background = `conic-gradient(#9dff50 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+const form = document.querySelector(".form");
+const closeModal = () => {
+  modal.classList.remove("show");
 };
 
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-AOS.init();
+  (function () {
+    emailjs.init("SKcsEiQVkv2-_H0KY");
+  })();
+
+  const serviceId = "service_otrbr3v";
+  const templateId = "template_m08zf9q";
+  let params = {
+    senderName: document.querySelector("#name").value,
+    senderEmail: document.querySelector("#email").value,
+    message: document.querySelector("#message").value,
+  };
+
+  emailjs.send(serviceId, templateId, params).then(
+    function (response) {
+      Swal.fire({
+        title: "Your Email was sent!",
+        icon: "success",
+      }).then(() => {
+        form.reset();
+      });
+    },
+    function (error) {
+      console.log("FAILED...", error);
+      Swal.fire({
+        title: "Error sending email",
+        text: "Please try again later.",
+        icon: "error",
+      });
+    }
+  );
+
+  setTimeout(() => {
+    closeModal();
+  }, 600);
+});

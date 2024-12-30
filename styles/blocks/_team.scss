@@ -1,64 +1,61 @@
 .team {
-  padding: 140px 0 90px;
+  padding: 8.75rem 0 5.625rem;
   color: $color-black;
 
   @media screen and (max-width: $breakpoint__m) {
-    padding-top: 40px;
+    padding-top: 2.5rem;
   }
 
   &__row {
     display: flex;
     flex-direction: column;
-    animation: appear 3s ease 0s 1 normal forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
-    column-gap: 50px;
+    column-gap: 3.125rem;
 
     @media screen and (max-width: $breakpoint__m) {
       flex-direction: column;
       justify-content: center;
       text-align: center;
       align-items: center;
-      row-gap: 25px;
+      row-gap: 1.5625rem;
     }
   }
 
   &__title {
-    max-width: 553px;
+    max-width: 34.375rem;
   }
 
   &__text {
-    max-width: 536px;
+    max-width: 33.6rem;
   }
 
   &__images {
     display: flex;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 2.5rem;
 
     @media screen and (max-width: $breakpoint__l) {
       flex-direction: column;
-      margin-top: 40px;
-      row-gap: 30px;
+      margin-top: 2.5rem;
+      row-gap: 1.875rem;
     }
 
     .image-1 img {
       width: 100%;
-      max-height: 504px;
-      border-radius: 32px;
-      max-width: 750px;
+      max-height: 31.5625rem;
+      border-radius: 2rem;
+      max-width: 46.725rem;
     }
 
     .image-2 img {
-      border-radius: 32px;
-      max-height: 663px;
+      border-radius: 2rem;
+      max-height: 41.5625rem;
       width: 100%;
-      max-width: 443px;
+      max-width: 27.8125rem;
     }
   }
 }

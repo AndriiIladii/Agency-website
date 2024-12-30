@@ -1,17 +1,17 @@
 .portfolio {
   color: $color-black;
-  padding: 220px 0 120px;
+  padding: 13.75rem 0 7.5rem;
   position: relative;
 
   @media screen and (max-width: $breakpoint__m) {
-    padding-bottom: 70px;
+    padding-bottom: 4.375rem;
   }
 
   .portfolio__description {
     position: absolute;
     z-index: 1;
-    top: 270px;
-    left: -45px;
+    top: 16.875rem;
+    left: -2.8125rem;
     text-transform: uppercase;
     background-color: $color-electric-green;
     padding: 1rem 1.5rem;
@@ -20,19 +20,19 @@
     transform: rotate(270deg);
 
     @media screen and (max-width: $breakpoint__xl) {
-      top: 220px;
-      padding: 12px 18px;
+      top: 13.75rem;
+      padding: 0.75rem 1.125rem;
     }
 
     @media screen and (max-width: $breakpoint__ml) {
-      top: 165px;
-      left: -35px;
+      top: 10.3125rem;
+      left: -2.1875rem;
       font-size: 0.875rem;
-      padding: 8px 10px;
+      padding: 0.5rem 0.625rem;
     }
 
     @media screen and (max-width: $breakpoint__ml) {
-      top: 155px;
+      top: 9.6875rem;
     }
   }
 
@@ -54,12 +54,12 @@
 }
 
 .portfolio__slider {
-  margin-top: 60px;
+  margin-top: 3.75rem;
   display: flex;
   width: 100%;
 
   @media screen and (max-width: $breakpoint__xxl) {
-    margin-top: 100px;
+    margin-top: 6.25rem;
   }
 }
 
@@ -70,19 +70,19 @@
   @media screen and (max-width: $breakpoint__ml) {
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 1.125rem;
   }
 }
 
 .portfolio__item img {
   width: 48.4%;
-  max-height: 465px;
-  min-height: 205px;
-  border-radius: 32px;
-  border: 10px solid #e5e7ec;
+  max-height: 29.0625rem;
+  min-height: 12.8125rem;
+  border-radius: 2rem;
+  border: 0.625rem solid #e5e7ec;
 
   @media screen and (max-width: $breakpoint__l) {
-    border: 6px solid #e5e7ec;
+    border: 0.375rem solid #e5e7ec;
   }
 
   @media screen and (max-width: $breakpoint__ml) {
@@ -96,58 +96,53 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .portfolio__slider--tags {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 16px;
-  margin-bottom: 24px;
+  column-gap: 1rem;
+  margin-bottom: 1.5rem;
   justify-content: center;
 
   @media screen and (max-width: $breakpoint__ml) {
-    row-gap: 10px;
+    row-gap: 0.625rem;
   }
 }
 
 .portfolio__slider--tags p {
-  border-radius: 32px;
-  padding: 6px 12px;
+  border-radius: 2rem;
+  padding: 0.375rem 0.75rem;
   background-color: $color-light-grey;
   color: $color-grey;
-  font-size: 18px;
-
-  @media screen and (max-width: $breakpoint__ms) {
-    font-size: 14px;
-  }
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
 
   @media screen and (max-width: $breakpoint__xxs) {
-    font-size: 12px;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
   }
 }
 
 .portfolio__slider--link {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   display: flex;
-  column-gap: 8px;
+  column-gap: 0.5rem;
 
   @media screen and (max-width: $breakpoint__lm) {
     flex-direction: column;
     align-items: center;
-    row-gap: 5px;
+    row-gap: 0.3125;
   }
 }
 
 .portfolio__slider--link a {
   background-color: $color-electric-green;
-  padding: 9px 20px;
+  padding: 0.5625rem 1.125rem;
   border-radius: 100%;
   position: relative;
   transition: all 0.3s ease;
   @media screen and (max-width: $breakpoint__lm) {
-    padding: 20px;
+    padding: 1.125rem;
   }
 
   &:hover {
@@ -164,32 +159,32 @@
     position: absolute;
     top: 48%;
     transform: translate(-50%, -50%);
-    right: 4px;
+    right: 0.1875rem;
     background: url("../assets/services/tab_arrow-black.svg") center/contain
       no-repeat;
-    width: 16px;
-    height: 14px;
+    width: 1rem;
+    height: 0.875rem;
   }
 }
 
 .portfolio__slider--text {
   font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
-  max-width: 780px;
+  max-width: 48.75rem;
   color: $color-grey;
 }
 
 .portfolio__slider--prev {
   position: absolute;
   top: 35%;
-  left: -75px;
+  left: -4.6875rem;
   border-radius: 100%;
   border: 1px solid $color-light-black;
-  padding: 27px;
+  padding: 1.6875rem;
   transition: all 0.3s ease;
 
   @media screen and (max-width: $breakpoint__m) {
-    padding: 22px;
-    left: -40px;
+    padding: 1.375rem;
+    left: -2rem;
   }
 
   &:hover {
@@ -209,12 +204,12 @@
     right: -2px;
     background: url("../assets/portfolio/arrow-left.svg") center/contain
       no-repeat;
-    width: 28px;
-    height: 16px;
+    width: 1.75rem;
+    height: 1rem;
 
     @media screen and (max-width: $breakpoint__m) {
-      width: 22px;
-      height: 14px;
+      width: 1.375rem;
+      height: 0.875rem;
       right: -1px;
       top: 48%;
     }
@@ -224,14 +219,14 @@
 .portfolio__slider--next {
   position: absolute;
   top: 35%;
-  right: -65px;
+  right: -4.0625rem;
   border-radius: 100%;
   border: 1px solid $color-light-black;
-  padding: 27px;
+  padding: 1.6875rem;
   transition: all 0.3s ease;
 
   @media screen and (max-width: $breakpoint__m) {
-    padding: 22px;
+    padding: 1.375rem;
   }
 
   &:hover {
@@ -250,12 +245,12 @@
     right: -2px;
     background: url("../assets/portfolio/arrow-right.svg") center/contain
       no-repeat;
-    width: 28px;
-    height: 16px;
+    width: 1.75rem;
+    height: 1rem;
 
     @media screen and (max-width: $breakpoint__m) {
-      width: 22px;
-      height: 14px;
+      width: 1.375rem;
+      height: 0.875rem;
       right: -1px;
       top: 48%;
     }
@@ -265,12 +260,12 @@
 .slider__btn {
   @media screen and (max-width: $breakpoint__xxl) {
     position: absolute;
-    top: 30px;
-    left: 80px;
+    top: 1.875rem;
+    left: 5rem;
   }
 
   @media screen and (max-width: $breakpoint__m) {
-    top: 50px;
+    top: 3.125rem;
   }
 
   @media screen and (max-width: $breakpoint__ml) {

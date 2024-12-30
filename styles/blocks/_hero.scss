@@ -1,8 +1,31 @@
 .hero {
-  padding: 80px 0 190px;
+  padding: 5rem 0 11.875rem;
+  position: relative;
+  background-image: url("../assets/header/header-grid-bg.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  background-color: $color-light-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4.375rem;
+    background-color: $color-white;
+    transform: skewY(2deg);
+    transform-origin: bottom left;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: $breakpoint__l) {
+    background-size: auto;
+  }
 
   @media screen and (max-width: $breakpoint__m) {
-    padding: 50px 0 170px;
+    padding: 3.125rem 0 10.625rem;
   }
 
   &__row {
@@ -11,7 +34,7 @@
   }
 
   &__content {
-    max-width: 1068px;
+    max-width: 66.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,11 +43,11 @@
   }
 
   &__title {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   &__subtitle {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 
   &__text {

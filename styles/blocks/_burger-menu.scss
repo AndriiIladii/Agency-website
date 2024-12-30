@@ -20,9 +20,9 @@
 
   .bar {
     display: block;
-    width: 30px;
-    height: 4px;
-    margin: 5px auto;
+    width: 1.875rem;
+    height: 0.25rem;
+    margin: 0.3125rem auto;
     transition: all 0.3s ease-in-out;
     background-color: $color-electric-green;
   }
@@ -33,27 +33,27 @@
     }
 
     .bar:nth-child(1) {
-      transform: translateY(10px) rotate(45deg);
+      transform: translateY(0.625rem) rotate(45deg);
     }
 
     .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-0.5rem) rotate(-45deg);
     }
   }
 }
 
 .burger__menu {
   z-index: 999;
-  padding-top: 160px;
+  padding-top: 10rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 1.875rem;
   position: fixed;
-  right: -550px;
+  right: -34.375rem;
   top: 0;
   background-color: $color-light-black;
-  width: 250px;
+  width: 15.625rem;
   height: 100%;
   transition: all 0.3s ease;
 
@@ -71,8 +71,8 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -10px;
-    height: 2px;
+    bottom: -0.625rem;
+    height: 0.125rem;
     width: 100%;
     background-color: $color-electric-green;
     opacity: 0;
